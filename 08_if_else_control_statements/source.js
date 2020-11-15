@@ -46,9 +46,9 @@ var x = 10;
 // Method 1: Uncool Method
 if(x > 0){
     if(x%2 === 0){
-        document.write("<h4>Number is postive and even</h4>");
+        document.write("<h4>Number is positive and even</h4>");
     }else{
-        document.write("<h4>Number is postive but odd</h4>");
+        document.write("<h4>Number is positive but odd</h4>");
     }
 }else{
     document.write("<h4>Number is negative</h4>");
@@ -56,5 +56,5 @@ if(x > 0){
 
 // Method 2: Cool Method
 if(x > 0 && x%2 === 0){
-    document.write("<h4>Number is postive and even</h4>");
+    document.write("<h4>Number is positive and even</h4>");
 }
