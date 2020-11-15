@@ -13,5 +13,5 @@ for(var i=1; i <= 10; i++){
 
 document.write("<h2>First 5 even numbers</h2>");
 for(var i=2; i<=10; i+=2){
-    document.write("<h3>"+ i +"</h3>")
+    document.write("<h3>"+ i +"</h3>");
 }
