@@ -1,6 +1,6 @@
 // toString()
 
-document.write("<h3>Binary Deimal Conversions</h3><br>");
+document.write("<h3>Binary Decimal Conversions</h3><br>");
 
 /*
 Theory of toString():
