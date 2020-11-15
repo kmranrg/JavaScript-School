@@ -107,11 +107,16 @@ document.write("Output 8:","<br>"+result+"<br>");
 /*
 DIFFERENCE BETWEEN `>>` AND `>>>`
 
-In an arithmetic shift, the sign bit is extended to preserve the signedness of the number.
+1) They work the same for non-negative numbers.
+2) For negative number, `>>` preserves the sign and works on binary form 
+   but `>>>` does not preserve sign and works on 2's complement form.
 
-For Example: -2 represented in 8 bits would be 11111110 (because the most significant bit
-    has negative weight). Shifting it right one bit using arithmetic shift would give
-    you 11111111, or -1. Logical right shift, however, does not care that the value could 
-    possibly represent a signed number; it simply moves everything to the right and fills in 
-    from the left with 0s. Shifting our -2 right one bit using logical shift would give 01111111.
+Note: toString(2) is used to convert a number into string of binary form.
+Example 1:
+
+var p = (-12 >> 0).toString(2) // output: -1100 (binary form)
+var p = -12 >> 0 // output: -12 (decimal form of above binary form)
+ 
+var q = (-12 >>> 0).toString(2) // output: 11111111111111111111111111110100 i.e. 12 in 2's complement
+var q = -12 >>> 0 // output: 4294967284 (decimal form of above 2's complement)
 */
