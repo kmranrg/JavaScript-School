@@ -1,0 +1,1 @@
+document.write("I am from external JavaScript file");
