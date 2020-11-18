@@ -168,7 +168,7 @@ document.write("19. "+res+"<br>");
 
 // TRICK: If you want to replace by case insensitively, then use a regular expression with an /i flag (here `/i` denotes insensitive)
 var str = "Please visit Microsoft!";
-var res = str.replace(/MICROSOFT/i, "Google"); // it won't replace
+var res = str.replace(/MICROSOFT/i, "Google");
 document.write("20. "+res+"<br>");
 
 // NOTE: To replace all matches, use a regular expression with a /g flag (here /g denotes global match)
