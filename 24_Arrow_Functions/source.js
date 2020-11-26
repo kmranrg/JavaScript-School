@@ -47,8 +47,8 @@ document.write("8. "+hello5("Anurag")+" | Type: "+typeof hello5("Anurag")+"<br>"
 Theory:
 
 1) The handling of this is also different in arrow functions compared to regular functions.
-2) In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
-3) In Arrow Functions, the "this" keyword represents the object that owns the function, no matter who calls the function.
+2) In regular functions the `this` keyword represents the object that called the function, which could be the window, the document, a button or whatever.
+3) In Arrow Functions, the `this` keyword represents the object that owns the function, no matter who calls the function.
 */
 
 // Example 1 : `this` in regular function
