@@ -1,2 +1,2 @@
 # JavaScript-School
-JavaScript for Beginners
+JavaScript for JS Enthusiast
