@@ -5,14 +5,21 @@ document.write("<h3>JS for...in Loop</h3><br>");
 document.write("1. for...in loop working in Arrays<br>");
 var arr = ["apple", "banana", "guava"];
 for (var i in arr){
-    document.write("Index: "+i+" | Element: "+arr[i]+"<br>");
+    document.write("Index Type: "+typeof i+" | Index: "+i+" | Element: "+arr[i]+"<br>");
 }
 
 // 2) for...in loop working in Objects
 document.write("2. for...in loop working in Objects<br>");
-var obj = {"apple":"red", "banana":"yellow", "guava":"green"};
+var obj = {apple:"red", "banana":"yellow", "guava":"green"};
 for (var j in obj){
-    document.write("Key: "+j+" | Value: "+obj[j]+" | Type: "+typeof obj+"<br>");
+    document.write("Key Type: "+typeof j+"| Key: "+j+" | Value: "+obj[j]+" | Type: "+typeof obj+"<br>");
+}
+
+// 3) for...in loop working in Strings
+document.write("3. for...in loop working in Strings<br>");
+var str = "Anurag";
+for (var k in str){
+    document.write("Index Type: "+typeof k+" | Index: "+k+" | Value: "+str[k]+"<br>");
 }
 
 // JS eval()
