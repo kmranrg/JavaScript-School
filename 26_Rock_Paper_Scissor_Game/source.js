@@ -28,14 +28,14 @@ print_message = winner_name => {
     document.write("===========================================<br>");
     document.write("Your Move: "+user+" | Computer's Move: "+computer+"<br>");
     document.write("===========================================<br>");
-    if(winner_name === "match_tied"){
-        document.write("Math Tied!!<br>");
+    if(winner_name === "computer"){
+        document.write("Computer Won! Better Luck Next Time!<br>");
         document.write("===========================================<br>");
     }else if(winner_name === "user"){
         document.write("Congratulations!! You won!!<br>");
         document.write("===========================================<br>");
     }else{
-        document.write("Computer Won! Better Luck Next Time!<br>");
+        document.write("Math Tied!!<br>");
         document.write("===========================================<br>");
     }
 }
