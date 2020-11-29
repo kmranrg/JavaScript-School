@@ -57,7 +57,7 @@ var obj = {
 NOTE: 
 
 JS internally stores all the property names by default as strings only (like `id` is String) 
-but the property value depends on the thier data types (like `0` is Number)
+but the property value depends on the thier data types (like `100` is Number)
 */
 obj["instagram_id"] = "kmranrg"; // adding new object property
 var text1 = "{";
