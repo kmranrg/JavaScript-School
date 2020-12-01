@@ -11,15 +11,19 @@ var user = "rock";
 var computer = items[randomItemIndex]; // computer is going to select randomly
 
 decide_winner = (user_move, computer_move) => {
+    let flag = 0;
     if (user_move === computer_move){
         return "match_tied";
     }else{
         for(var i=0; i<rules.length; i++){
             if (String(user_move)+" beats "+String(computer_move) === rules[i]){
-                return "user";
-            }else{
-                return "computer";
+                flag = 1;
             }
+        }
+        if(flag === 1){
+            return "user";
+        }else{
+            return "computer";
         }
     }
 }
